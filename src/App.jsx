@@ -2,6 +2,7 @@ import { createContext, useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import { authentication } from './firebase-config';
 import {  signInWithPopup, TwitterAuthProvider } from "firebase/auth";
+import Home from "./pages/Home";
 
 
 function App() {
@@ -19,17 +20,11 @@ function App() {
   }
 
   return (
-    <>
-   <div className="">
-   <h1 className="text-3xl font-bold underline text-red-600">
-      Hello world!
-    </h1>
-    hello
-    <button onClick={SigninTwitter}>
-      connect da twitter
-    </button>
-   </div>
-    </>
+<Routes>
+      <Route path="/" element={<Home />}>
+      
+      </Route>
+    </Routes>
   )
 }
 
