@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/nobody.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -69,12 +70,12 @@ const ListItem = ({ children, NavLink }) => {
   return (
     <>
       <li>
-        <a
-          href={NavLink}
+        <Link
+          to={NavLink}
           className="flex py-2 text-xl font-bold text-white hover:text-rose-400 lg:ml-12 lg:inline-flex"
         >
           {children}
-        </a>
+        </Link>
       </li>
     </>
   );
