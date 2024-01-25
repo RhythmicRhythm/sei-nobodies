@@ -42,14 +42,14 @@ const Home = () => {
           </p>
 
           {displayName ? (
-            <button
-              onClick={SigninTwitter}
-              className="rounded-md bg-rose-600 px-7 py-3 text-xl sm:text-3xl font-bold text-white hover:bg-rose-400"
-            >
-              Connect Twitter
-            </button>
-          ) : (
             <></>
+          ) : (
+            <button
+            onClick={SigninTwitter}
+            className="rounded-md bg-rose-600 px-7 py-3 text-xl sm:text-3xl font-bold text-white hover:bg-rose-400"
+          >
+            Connect Twitter
+          </button>
           )}
 
           <form className="mt-8 text-white w-full px-8">
