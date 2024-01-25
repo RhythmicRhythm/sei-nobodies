@@ -40,12 +40,17 @@ const Home = () => {
           <p className="text-4xl text-white mb-8 text-center">
             Ready to join Nobodies Token Waitlist?
           </p>
-          <button
-            onClick={SigninTwitter}
-            className="rounded-md bg-rose-600 px-7 py-3 text-xl sm:text-3xl font-bold text-white hover:bg-rose-400"
-          >
-            Connect Twitter
-          </button>
+
+          {displayName ? (
+            <button
+              onClick={SigninTwitter}
+              className="rounded-md bg-rose-600 px-7 py-3 text-xl sm:text-3xl font-bold text-white hover:bg-rose-400"
+            >
+              Connect Twitter
+            </button>
+          ) : (
+            <></>
+          )}
 
           <form className="mt-8 text-white w-full px-8">
             {displayName ? (
