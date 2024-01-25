@@ -12,6 +12,7 @@ const Home = () => {
     signInWithPopup(authentication, provider)
     .then((re) => {
       console.log(re.user.reloadUserInfo);
+      console.log("mdata", JSON.stringify(re));
     })
     .catch((err) => {
       console.log(err);
