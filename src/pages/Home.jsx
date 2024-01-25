@@ -34,7 +34,7 @@ const Home = () => {
         On Sei
       </p>
 
-      <p className="text-4xl text-white mb-8">
+      <p className="text-4xl text-white mb-8 text-center">
       Ready to join Nobodies Token Waitlist?
       </p>
       <button onClick={SigninTwitter}
