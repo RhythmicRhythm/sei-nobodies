@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import { authentication } from '../firebase-config';
 import {  signInWithPopup, TwitterAuthProvider } from "firebase/auth";
+import { Toaster, toast } from "react-hot-toast";
 
 
 const Home = () => {
@@ -10,7 +11,7 @@ const Home = () => {
     const provider = new TwitterAuthProvider();
     signInWithPopup(authentication, provider)
     .then((re) => {
-      console.log(re);
+      console.log(re.user);
     })
     .catch((err) => {
       console.log(err);
@@ -20,6 +21,7 @@ const Home = () => {
 
   return (
     <div>
+       <Toaster />
       <Navbar />
 
      <div className="mx-auto flex max-w-[500px] justify-center items-center px-6">
