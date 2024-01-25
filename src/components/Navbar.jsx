@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "../assets/nobody.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -10,9 +11,9 @@ const Navbar = () => {
           <div className="w-60 max-w-full px-4">
             <a href="/#" className="block w-full py-5">
               <img
-                src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-primary.svg"
+                src={logo}
                 alt="logo"
-                className=""
+                className="w-16 h-16"
               />
               
             </a>
@@ -38,27 +39,22 @@ const Navbar = () => {
                 } `}
               >
                 <ul className="block lg:flex">
-                  <ListItem NavLink="/#">Home</ListItem>
-                  <ListItem NavLink="/#">Payment</ListItem>
-                  <ListItem NavLink="/#">About</ListItem>
-                  <ListItem NavLink="/#">Blog</ListItem>
+                  <ListItem NavLink="/">Home</ListItem>
+                 
+                  <ListItem NavLink="/about">About</ListItem>
+                  <ListItem NavLink="/tokenomics">Tokenomics</ListItem>
                 </ul>
               </nav>
             </div>
             <div className="hidden justify-end pr-16 sm:flex lg:pr-0">
-              <a
-                href="/#"
-                className="px-7 py-3 text-base font-medium text-dark hover:text-primary dark:text-white"
-              >
-                Sign in
-              </a>
+              
 
-              <a
-                href="/#"
-                className="rounded-md bg-primary px-7 py-3 text-base font-medium text-white hover:bg-primary/90"
+              <button
+              
+                className="rounded-md bg-rose-600 px-7 py-3 text-xl font-bold text-white hover:bg-rose-400"
               >
-                Sign Up
-              </a>
+                Connect Twitter
+              </button>
             </div>
           </div>
         </div>
@@ -75,7 +71,7 @@ const ListItem = ({ children, NavLink }) => {
       <li>
         <a
           href={NavLink}
-          className="flex py-2 text-base font-medium text-body-color hover:text-dark dark:text-dark-6 dark:hover:text-white lg:ml-12 lg:inline-flex"
+          className="flex py-2 text-xl font-bold text-white hover:text-rose-400 lg:ml-12 lg:inline-flex"
         >
           {children}
         </a>
