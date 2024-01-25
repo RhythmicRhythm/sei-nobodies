@@ -1,7 +1,23 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import { authentication } from '../firebase-config';
+import {  signInWithPopup, TwitterAuthProvider } from "firebase/auth";
+
 
 const Home = () => {
+
+  const SigninTwitter = () => {
+    const provider = new TwitterAuthProvider();
+    signInWithPopup(authentication, provider)
+    .then((re) => {
+      console.log(re);
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+
+  }
+
   return (
     <div>
       <Navbar />
