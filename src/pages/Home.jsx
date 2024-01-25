@@ -13,7 +13,7 @@ const Home = () => {
     .then((re) => {
       console.log(re.user.reloadUserInfo.displayName);
       toast.success(re.user.reloadUserInfo.displayName);
-      console.log("mdata", JSON.stringify(re.user.reloadUserInfo.displayName));
+      console.log("mdata", JSON.stringify(re.user.reloadUserInfo));
     })
     .catch((err) => {
       console.log(err);
