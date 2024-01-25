@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { authentication } from './firebase-config';
 import {  signInWithPopup, TwitterAuthProvider } from "firebase/auth";
 import Home from "./pages/Home";
+import About from "./pages/About";
 
 
 function App() {
@@ -21,9 +22,11 @@ function App() {
 
   return (
 <Routes>
-      <Route path="/" element={<Home />}>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+        
       
-      </Route>
+   
     </Routes>
   )
 }
