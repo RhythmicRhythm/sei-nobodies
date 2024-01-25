@@ -6,16 +6,21 @@ import { Toaster, toast } from "react-hot-toast";
 import { storeInSession } from "../common/session";
 import { UserContext } from "../App";
 
-
 const Home = () => {
+  let {
+    userAuth: { displayName },
+    setUserAuth,
+  } = useContext(UserContext);
+
+  console.log(displayName);
+
   const SigninTwitter = () => {
     const provider = new TwitterAuthProvider();
     signInWithPopup(authentication, provider)
       .then((re) => {
-     
         toast.success(re.user.reloadUserInfo.displayName);
-        storeInSession("user", JSON.stringify(re.user.reloadUserInfo))
-       
+        storeInSession("user", JSON.stringify(re.user.reloadUserInfo));
+        setUserAuth(re.user.reloadUserInfo);
       })
       .catch((err) => {
         console.log(err);
