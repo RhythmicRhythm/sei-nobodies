@@ -48,20 +48,38 @@ const Home = () => {
           </button>
 
           <form className="mt-8 text-white w-full px-8">
-            <div className="flex flex-col text-left mb-6">
-              <label className="w-full mb-2 text-lg">
-                Twitter Username{" "}
-                <span className="text-orange-400 text-xs mb-3">
-                  *(disabled)
-                </span>
-              </label>
-              <input
-                type="text"
-                placeholder="hedjdskdsd"
-                // value="hello"
-                className="bg-transparent px-6 py-2 border border-rose-500 rounded-lg ring-orange-500 focus:ring-2"
-              />
-            </div>
+            {displayName ? (
+              <div className="flex flex-col text-left mb-6">
+                <label className="w-full mb-2 text-lg">
+                  Twitter Username{" "}
+                  <span className="text-orange-400 text-xs mb-3">
+                    *(disabled)
+                  </span>
+                </label>
+                <input
+                  type="text"
+                  value={displayName}
+                  className="bg-transparent px-6 py-2 border border-rose-500 rounded-lg ring-orange-500 focus:ring-2"
+                  disabled
+                />
+              </div>
+            ) : (
+              <div className="flex flex-col text-left mb-6">
+                <label className="w-full mb-2 text-lg">
+                  Twitter Username{" "}
+                  <span className="text-orange-400 text-xs mb-3">
+                    *(disabled)
+                  </span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="Connect Twitter to get username"
+                  // value="hello"
+                  disabled
+                  className="bg-transparent px-6 py-2 border border-rose-500 rounded-lg ring-orange-500 focus:ring-2"
+                />
+              </div>
+            )}
             <div className="flex flex-col text-left mb-6">
               <label className="w-full mb-2 text-lg">
                 Discord Username{" "}
