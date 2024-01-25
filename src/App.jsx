@@ -7,21 +7,23 @@ import About from "./pages/About";
 
 export const UserContext = createContext({});
 
-
 function App() {
-
   const [userAuth, setUserAuth] = useState({});
 
+  //   useEffect(() => {
+  //     let userInSession = lookInSession("user");
+
+  //     userInSession ? setUserAuth(JSON.parse(userInSession)) : setUserAuth({acess_token: null})
+  // }, [])
 
   return (
-<Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-        
-      
-   
-    </Routes>
-  )
+    <UserContext.Provider value={{ userAuth, setUserAuth }}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </UserContext.Provider>
+  );
 }
 
-export default App
+export default App;
