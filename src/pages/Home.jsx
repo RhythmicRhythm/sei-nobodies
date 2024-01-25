@@ -145,6 +145,19 @@ const Home = () => {
                 className="bg-transparent px-6 py-2 border border-rose-500 rounded-lg ring-orange-500 focus:ring-2"
               />
             </div>
+
+            {displayName ? (
+              <button className="rounded-md bg-rose-600 px-7 py-3 text-xl sm:text-3xl font-bold text-white hover:bg-rose-400">
+                Apply for Waitlist
+              </button>
+            ) : (
+              <button 
+              className="rounded-md bg-gray-400 px-7 py-3 text-xl sm:text-3xl 
+              font-bold text-white"
+               disabled>
+                Connect Twitter to Apply
+              </button>
+            )}
           </form>
         </div>
       </div>
