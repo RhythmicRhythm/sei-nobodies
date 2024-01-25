@@ -11,7 +11,7 @@ const Home = () => {
     const provider = new TwitterAuthProvider();
     signInWithPopup(authentication, provider)
     .then((re) => {
-      console.log(re.user);
+      console.log(re.user.reloadUserInfo);
     })
     .catch((err) => {
       console.log(err);
