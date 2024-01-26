@@ -28,6 +28,76 @@ const About = () => {
                 alt=""
                 className="relative z-40 object-cover w-full h-96"
               />
+               <ul className="mb-10">
+                <li className="flex items-center mb-4 mt-8 text-base text-gray-600 dark:text-gray-400">
+                  <span className="mr-3 text-rose-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={16}
+                      height={16}
+                      fill="currentColor"
+                      className="w-5 h-5 bi bi-patch-check-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                    </svg>
+                  </span>
+                  NFT Holder Rewards:
+                </li>
+                <p className="text-sm text-gray-400">
+                  One of the groundbreaking features of $NOBODY is its
+                  commitment to supporting holders. Rewards for holders would be
+                  taken at intervals for delisted NFTs. Holders who have
+                  delisted their NFTs will receive exclusive rewards when
+                  snapshot is taken before the commencement of each reward,
+                  providing them with continued value.
+                </p>
+                <li className="flex items-center mb-4 text-base text-gray-600 dark:text-gray-400">
+                  <span className="mr-3 text-rose-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={16}
+                      height={16}
+                      fill="currentColor"
+                      className="w-5 h-5 bi bi-patch-check-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                    </svg>
+                  </span>
+                  Lorem ipsum dolor sit amet, consectetur domino act
+                </li>
+                <li className="flex items-center mb-4 text-base text-gray-600 dark:text-gray-400">
+                  <span className="mr-3 text-rose-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={16}
+                      height={16}
+                      fill="currentColor"
+                      className="w-5 h-5 bi bi-patch-check-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                    </svg>
+                  </span>
+                  Lorem ipsum dolor sit amet, consectetur domino act
+                </li>
+                <li className="flex items-center mb-4 text-base text-gray-600 dark:text-gray-400">
+                  <span className="mr-3 text-rose-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={16}
+                      height={16}
+                      fill="currentColor"
+                      className="w-5 h-5 bi bi-patch-check-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                    </svg>
+                  </span>
+                  Lorem ipsum dolor sit amet, consectetur domino act
+                </li>
+              </ul>
             </div>
             <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
               <h2 className="py-3 pl-2 mb-4 text-2xl font-bold text-gray-700 border-l-4 border-rose-500 dark:text-gray-300">
@@ -57,8 +127,8 @@ const About = () => {
                   </span>
                   NFT Holder Rewards:
                 </li>
-                <p>
-                  1. One of the groundbreaking features of $NOBODY is its
+                <p className="text-sm text-gray-400">
+                  One of the groundbreaking features of $NOBODY is its
                   commitment to supporting holders. Rewards for holders would be
                   taken at intervals for delisted NFTs. Holders who have
                   delisted their NFTs will receive exclusive rewards when
