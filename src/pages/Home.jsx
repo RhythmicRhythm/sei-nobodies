@@ -51,6 +51,7 @@ const Home = () => {
         twitter_username,
         discord_username,
         sei_address,
+        sei_address_2,
         sei_intrest,
         sei_presale,
       } = formData;
@@ -158,6 +159,7 @@ const Home = () => {
                 onChange={handleInputChange}
                 name="sei_address"
                 className="bg-transparent px-6 py-2 border border-rose-500 rounded-lg ring-orange-500 focus:ring-2"
+                required
               />
             </div>
 
@@ -191,6 +193,7 @@ const Home = () => {
                 onChange={handleInputChange}
                 name="sei_intrest"
                 className="bg-transparent px-6 py-2 border border-rose-500 rounded-lg ring-orange-500 focus:ring-2"
+                required
               />
             </div>
 
@@ -208,6 +211,7 @@ const Home = () => {
                 onChange={handleInputChange}
                 name="sei_presale"
                 className="bg-transparent px-6 py-2 border border-rose-500 rounded-lg ring-orange-500 focus:ring-2"
+                required
               />
             </div>
 

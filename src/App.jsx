@@ -5,6 +5,7 @@ import { lookInSession } from "./common/session";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Whitelist from "./pages/Whitelist";
+import Success from "./pages/Success";
 
 export const UserContext = createContext({});
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/wh" element={<Whitelist />} />
+        <Route path="/success" element={<Success />} />
       </Routes>
     </UserContext.Provider>
   );
