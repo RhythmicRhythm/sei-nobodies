@@ -59,6 +59,8 @@ const Home = () => {
     axios.post("http://localhost:5000/", formData)
     .then(({data}) => {
       console.log(data)
+    }).catch(({response}) => {
+      console.log(response.data.message);
     })
   };
   return (
