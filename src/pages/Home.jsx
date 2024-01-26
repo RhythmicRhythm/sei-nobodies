@@ -5,10 +5,11 @@ import { signInWithPopup, TwitterAuthProvider } from "firebase/auth";
 import { Toaster, toast } from "react-hot-toast";
 import { storeInSession } from "../common/session";
 import { UserContext } from "../App";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Home = () => {
-  // const [formData, setformData] = useState(initialState);
+  const navigate = useNavigate();
 
   let {
     userAuth: { displayName },
@@ -61,6 +62,7 @@ const Home = () => {
       .post("http://localhost:5000/", formData)
       .then(({ data }) => {
         console.log(data);
+        navigate("/success")
       })
       .catch(({ response }) => {
         console.log(response.data.message);

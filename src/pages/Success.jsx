@@ -6,6 +6,8 @@ const Success = () => {
     userAuth: { displayName },
     setUserAuth,
   } = useContext(UserContext);
+
+  
   return (
     <div>
       <div className="mx-auto flex max-w-[500px] justify-center items-center px-6">
