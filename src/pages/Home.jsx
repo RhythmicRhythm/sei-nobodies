@@ -124,7 +124,7 @@ const Home = () => {
                 </label>
                 <input
                   type="text"
-                  placeholder="Connect Twitter to get username"
+                  value="Connect Twitter to get username"
                   name="twitter_username"
                   className="bg-transparent px-6 py-2 border border-rose-500 rounded-lg ring-orange-500 focus:ring-2"
                   required
