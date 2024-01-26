@@ -4,6 +4,7 @@ import { lookInSession } from "./common/session";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Whitelist from "./pages/Whitelist";
 
 export const UserContext = createContext({});
 
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/wh" element={<Whitelist />} />
       </Routes>
     </UserContext.Provider>
   );

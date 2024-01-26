@@ -5,17 +5,10 @@ import { signInWithPopup, TwitterAuthProvider } from "firebase/auth";
 import { Toaster, toast } from "react-hot-toast";
 import { storeInSession } from "../common/session";
 import { UserContext } from "../App";
-
-const initialState = {
-  twitter_username: "",
-  discord_username: "",
-  sei_address: "",
-  sei_intrest: "",
-  sei_presale: "",
-};
+import axios from "axios";
 
 const Home = () => {
-  const [formData, setformData] = useState(initialState);
+  // const [formData, setformData] = useState(initialState);
 
   let {
     userAuth: { displayName },
@@ -24,21 +17,11 @@ const Home = () => {
 
   console.log(displayName);
 
-  const {
-    twitter_username,
-    discord_username,
-    sei_address,
-    sei_intrest,
-    sei_presale,
-  } = formData;
-
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setformData({ ...formData, [name]: value });
-    // setIsDescEmpty(value.trim() === "");
+    // const { name, value } = e.target;
+    // setformData({ ...formData, [name]: value });
+    // // setIsDescEmpty(value.trim() === "");
   };
-
-
 
   const SigninTwitter = () => {
     const provider = new TwitterAuthProvider();
@@ -53,20 +36,30 @@ const Home = () => {
       });
   };
 
-  const applyWaitlist  = async (e) => {
+  const applyWaitlist = async (e) => {
     e.preventDefault();
-    const postData = new FormData();
-    postData.append("twitter_username", displayName);
-    postData.append("discord_username", discord_username);
-    postData.append("sei_address", sei_address);
-    postData.append("sei_intrest", sei_intrest);
-    postData.append("sei_presale", sei_presale);
 
-    console.log(...postData);
-    console.log("clicked");
+    let form = new FormData(formElement);
+    console.log(form);
 
-    console.log(postData);
-  }
+    let formData = {};
+
+    for (let [key, value] of form.entries()) {
+      formData[key] = value;
+
+      let {
+        twitter_username,
+        discord_username,
+        sei_address,
+        sei_intrest,
+        sei_presale,
+      } = formData;
+    }
+    console.log(formData);
+    const ssdata = axios.post("http://localhost:5000/",
+      formData
+    );
+  };
   return (
     <div>
       <Toaster />
@@ -92,7 +85,11 @@ const Home = () => {
             </button>
           )}
 
-          <form onSubmit={applyWaitlist} className="mt-8 text-white w-full px-8">
+          <form
+            id="formElement"
+            onSubmit={applyWaitlist}
+            className="mt-8 text-white w-full px-8"
+          >
             {displayName ? (
               <div className="flex flex-col text-left mb-6">
                 <label className="w-full mb-2 text-lg">
@@ -103,10 +100,10 @@ const Home = () => {
                 </label>
                 <input
                   type="text"
+                  name="twitter_username"
                   value={displayName}
-
                   className="bg-transparent px-6 py-2 border border-rose-500 rounded-lg ring-orange-500 focus:ring-2"
-                  disabled
+                  
                 />
               </div>
             ) : (
@@ -200,7 +197,6 @@ const Home = () => {
               <button
                 className="rounded-md bg-gray-400 px-7 py-3 text-xl sm:text-3xl 
               font-bold text-white"
-                
               >
                 Connect Twitter to Apply
               </button>
