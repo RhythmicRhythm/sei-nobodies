@@ -56,9 +56,10 @@ const Home = () => {
       } = formData;
     }
     console.log(formData);
-    const ssdata = axios.post("http://localhost:5000/",
-      formData
-    );
+    axios.post("http://localhost:5000/", formData)
+    .then(({data}) => {
+      console.log(data)
+    })
   };
   return (
     <div>
@@ -117,9 +118,9 @@ const Home = () => {
                 <input
                   type="text"
                   placeholder="Connect Twitter to get username"
-                  value="hello"
+                 
                   name="twitter_username"
-                  disabled
+                
                   className="bg-transparent px-6 py-2 border border-rose-500 rounded-lg ring-orange-500 focus:ring-2"
                 />
               </div>
