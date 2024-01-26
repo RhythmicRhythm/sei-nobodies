@@ -56,12 +56,14 @@ const Home = () => {
       } = formData;
     }
     console.log(formData);
-    axios.post("http://localhost:5000/", formData)
-    .then(({data}) => {
-      console.log(data)
-    }).catch(({response}) => {
-      console.log(response.data.message);
-    })
+    axios
+      .post("http://localhost:5000/", formData)
+      .then(({ data }) => {
+        console.log(data);
+      })
+      .catch(({ response }) => {
+        console.log(response.data.message);
+      });
   };
   return (
     <div>
@@ -106,7 +108,7 @@ const Home = () => {
                   name="twitter_username"
                   value={displayName}
                   className="bg-transparent px-6 py-2 border border-rose-500 rounded-lg ring-orange-500 focus:ring-2"
-                  
+                  required
                 />
               </div>
             ) : (
@@ -120,10 +122,9 @@ const Home = () => {
                 <input
                   type="text"
                   placeholder="Connect Twitter to get username"
-                 
                   name="twitter_username"
-                
                   className="bg-transparent px-6 py-2 border border-rose-500 rounded-lg ring-orange-500 focus:ring-2"
+                  required
                 />
               </div>
             )}
@@ -140,6 +141,7 @@ const Home = () => {
                 onChange={handleInputChange}
                 name="discord_username"
                 className="bg-transparent px-6 py-2 border border-rose-500 rounded-lg ring-orange-500 focus:ring-2"
+                required
               />
             </div>
 
@@ -161,6 +163,23 @@ const Home = () => {
 
             <div className="flex flex-col text-left mb-6">
               <label className="w-full mb-2 text-lg">
+                Do you hold SeiNobodies NFT collection ? if yes input the wallet
+                in which you do{" "}
+                <span className="text-orange-400 text-sm mb-3">
+                  * (optional)
+                </span>
+              </label>
+              <input
+                type="text"
+                placeholder="Enter Sei Address"
+                onChange={handleInputChange}
+                name="sei_address_2"
+                className="bg-transparent px-6 py-2 border border-rose-500 rounded-lg ring-orange-500 focus:ring-2"
+              />
+            </div>
+
+            <div className="flex flex-col text-left mb-6">
+              <label className="w-full mb-2 text-lg">
                 What interests you the most about Nobodies community ?{" "}
                 <span className="text-orange-400 text-sm mb-3">
                   * (required)
@@ -168,7 +187,7 @@ const Home = () => {
               </label>
               <textarea
                 type="text"
-                placeholder="Min 100 words"
+                placeholder="Your answer"
                 onChange={handleInputChange}
                 name="sei_intrest"
                 className="bg-transparent px-6 py-2 border border-rose-500 rounded-lg ring-orange-500 focus:ring-2"
