@@ -8,7 +8,7 @@ const Whitelist = () => {
 
   useEffect(() => {
     async function getCoursesData() {
-      const data = await axios.get("http://localhost:5000/");
+      const data = await axios.get("https://sei-nobodies-backend.onrender.com/");
 
       setCourses(data.data);
       console.log(data.data);

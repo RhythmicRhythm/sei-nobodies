@@ -59,7 +59,7 @@ const Home = () => {
     }
     console.log(formData);
     axios
-      .post("http://localhost:5000/", formData)
+      .post("https://sei-nobodies-backend.onrender.com/", formData)
       .then(({ data }) => {
         console.log(data);
         navigate("/success")
