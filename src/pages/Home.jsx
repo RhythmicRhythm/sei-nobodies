@@ -73,7 +73,7 @@ const Home = () => {
       <Toaster />
       <Navbar />
 
-      <div className="mx-auto flex max-w-[500px] justify-center items-center px-6">
+      <div className="mx-auto flex max-w-[700px] justify-center items-center px-6">
         <div className="flex w-full flex-col items-center mt-20">
           <h1 className="text-[60px] sm:text-[100px] text-white">NOBODIES</h1>
           <p className="text-4xl text-white mb-8">On Sei</p>
@@ -218,13 +218,13 @@ const Home = () => {
             </div>
 
             {displayName ? (
-              <button className="rounded-md bg-rose-600 px-7 py-3 text-xl sm:text-3xl font-bold text-white hover:bg-rose-400">
+              <button className="text-center w-full rounded-md bg-rose-600 px-7 py-3 text-xl sm:text-3xl font-bold text-white hover:bg-rose-400">
                 Apply for Waitlist
               </button>
             ) : (
               <button
-                className="rounded-md bg-gray-400 px-7 py-3 text-xl sm:text-3xl 
-              font-bold text-white"
+                className="text-center rounded-md bg-gray-400 px-7 py-3 text-xl sm:text-3xl 
+              font-bold text-white" disabled
               >
                 Connect Twitter to Apply
               </button>

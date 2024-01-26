@@ -50,12 +50,6 @@ const Navbar = () => {
             <div className="hidden justify-end pr-16 sm:flex lg:pr-0">
               
 
-              <button
-              
-                className="rounded-md bg-rose-600 px-7 py-3 text-xl font-bold text-white hover:bg-rose-400"
-              >
-                Connect Twitter
-              </button>
             </div>
           </div>
         </div>
