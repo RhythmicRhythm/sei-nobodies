@@ -43,7 +43,7 @@ const Navbar = () => {
                   <ListItem NavLink="/">Home</ListItem>
                  
                   <ListItem NavLink="/about">About</ListItem>
-                  <ListItem NavLink="/tokenomics">Tokenomics</ListItem>
+                  <ListItem NavLink="/wh">Tokenomics</ListItem>
                 </ul>
               </nav>
             </div>
