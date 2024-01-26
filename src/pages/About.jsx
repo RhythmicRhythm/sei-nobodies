@@ -1,11 +1,11 @@
-import React from 'react';
-import Navbar from '../components/Navbar';
+import React from "react";
+import Navbar from "../components/Navbar";
 
 const About = () => {
   return (
     <div>
       <Navbar />
-        <section className="flex items-center xl:h-screen">
+      <section className="flex items-center xl:h-screen">
         <div className="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
           <div className="px-4 mb-10 md:text-center md:mb-20">
             <p className="mb-2 text-xl font-semibold text-rose-700 dark:text-gray-400">
@@ -15,31 +15,66 @@ const About = () => {
               Why Sei Nobodies
             </h2>
             <div className="flex w-32 mt-1 mb-6 overflow-hidden rounded md:mx-auto md:mb-14">
-              <div className="flex-1 h-2 bg-rose-400">
-              </div>
-              <div className="flex-1 h-2 bg-rose-600">
-              </div>
-              <div className="flex-1 h-2 bg-rose-400">
-              </div>
+              <div className="flex-1 h-2 bg-rose-400"></div>
+              <div className="flex-1 h-2 bg-rose-600"></div>
+              <div className="flex-1 h-2 bg-rose-400"></div>
             </div>
           </div>
+          
           <div className="flex flex-wrap ">
             <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
-              <img src="https://i.postimg.cc/j5L5bX2d/pexels-andrea-piacquadio-3757946.jpg" alt="" className="relative z-40 object-cover w-full h-96" />
+              <img
+                src="https://i.postimg.cc/j5L5bX2d/pexels-andrea-piacquadio-3757946.jpg"
+                alt=""
+                className="relative z-40 object-cover w-full h-96"
+              />
             </div>
             <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
               <h2 className="py-3 pl-2 mb-4 text-2xl font-bold text-gray-700 border-l-4 border-rose-500 dark:text-gray-300">
-                We are providing a Sei Sei Sei
+                $NOBODY Token Launch Preview
               </h2>
               <p className="mb-4 text-base leading-7 text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam
+                As the eagerly anticipated $NOBODY token prepares for its
+                imminent launch, the Seinobodies community is abuzz with
+                excitement over its innovative features and unique value
+                propositions. Set to revolutionize the space, $NOBODY stands out
+                with a distinctive approach that includes rewarding holders of
+                delisted NFTs.
               </p>
               <ul className="mb-10">
                 <li className="flex items-center mb-4 text-base text-gray-600 dark:text-gray-400">
                   <span className="mr-3 text-rose-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="w-5 h-5 bi bi-patch-check-fill" viewBox="0 0 16 16">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={16}
+                      height={16}
+                      fill="currentColor"
+                      className="w-5 h-5 bi bi-patch-check-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                    </svg>
+                  </span>
+                  NFT Holder Rewards:
+                </li>
+                <p>
+                  1. One of the groundbreaking features of $NOBODY is its
+                  commitment to supporting holders. Rewards for holders would be
+                  taken at intervals for delisted NFTs. Holders who have
+                  delisted their NFTs will receive exclusive rewards when
+                  snapshot is taken before the commencement of each reward,
+                  providing them with continued value.
+                </p>
+                <li className="flex items-center mb-4 text-base text-gray-600 dark:text-gray-400">
+                  <span className="mr-3 text-rose-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={16}
+                      height={16}
+                      fill="currentColor"
+                      className="w-5 h-5 bi bi-patch-check-fill"
+                      viewBox="0 0 16 16"
+                    >
                       <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
                     </svg>
                   </span>
@@ -47,7 +82,14 @@ const About = () => {
                 </li>
                 <li className="flex items-center mb-4 text-base text-gray-600 dark:text-gray-400">
                   <span className="mr-3 text-rose-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="w-5 h-5 bi bi-patch-check-fill" viewBox="0 0 16 16">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={16}
+                      height={16}
+                      fill="currentColor"
+                      className="w-5 h-5 bi bi-patch-check-fill"
+                      viewBox="0 0 16 16"
+                    >
                       <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
                     </svg>
                   </span>
@@ -55,29 +97,26 @@ const About = () => {
                 </li>
                 <li className="flex items-center mb-4 text-base text-gray-600 dark:text-gray-400">
                   <span className="mr-3 text-rose-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="w-5 h-5 bi bi-patch-check-fill" viewBox="0 0 16 16">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={16}
+                      height={16}
+                      fill="currentColor"
+                      className="w-5 h-5 bi bi-patch-check-fill"
+                      viewBox="0 0 16 16"
+                    >
                       <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
                     </svg>
                   </span>
                   Lorem ipsum dolor sit amet, consectetur domino act
                 </li>
-                <li className="flex items-center mb-4 text-base text-gray-600 dark:text-gray-400">
-                  <span className="mr-3 text-rose-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="w-5 h-5 bi bi-patch-check-fill" viewBox="0 0 16 16">
-                      <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
-                    </svg>
-                  </span>
-                  Lorem ipsum dolor sit amet, consectetur domino act
-                </li>
-              
               </ul>
-              
             </div>
           </div>
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
