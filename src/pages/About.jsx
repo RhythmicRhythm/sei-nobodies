@@ -185,11 +185,11 @@ const About = () => {
           </div>
 
           <div className="px-4 mb-10 md:text-center md:mb-20">
-            <h2 className="pb-2 text-4xl font-bold text-gray-800  dark:text-gray-300">
+            <h2 className="pb-2 text-2xl font-bold text-gray-800  dark:text-gray-300">
               NFT Holder Rewards Explained
             </h2>
 
-            <p className="mb-2 text-xl font-semibold text-rose-700 dark:text-gray-400">
+            <p className="mb-2 text-sm font-semibold text-rose-700 dark:text-gray-400">
               Upon the launch of $NOBODY, holders of NFTs that have been
               delisted from various platforms will be eligible for exclusive
               rewards. These rewards may include additional $NOBODY tokens,
@@ -203,15 +203,21 @@ const About = () => {
           </div>
 
           <div className="px-4 mb-10 md:text-center md:mb-20">
-            <h2 className="pb-2 text-4xl font-bold text-gray-800  dark:text-gray-300">
-            Future Development
+            <h2 className="pb-2 text-2xl font-bold text-gray-800  dark:text-gray-300">
+              Future Development
             </h2>
 
-            <p className="mb-2 text-xl font-semibold text-rose-700 dark:text-gray-400">
-            The $NOBODY team is committed to delivering on its promises and has a comprehensive roadmap that includes further enhancements to its ecosystem, strategic partnerships, and the continuous development of features that cater to the evolving needs of the community.
-As the Seinobodies community eagerly awaits the $NOBODY token launch, it's clear that this project is poised to make waves with its creative features, community focus, and commitment to rewarding those who have faced challenges in the dynamic NFT landscape. Stay tuned for more updates as $NOBODY prepares to redefine the future of decentralized finance and NFTs.
-
-
+            <p className="mb-2 text-sm font-semibold text-rose-700 dark:text-gray-400">
+              The $NOBODY team is committed to delivering on its promises and
+              has a comprehensive roadmap that includes further enhancements to
+              its ecosystem, strategic partnerships, and the continuous
+              development of features that cater to the evolving needs of the
+              community. As the Seinobodies community eagerly awaits the $NOBODY
+              token launch, it's clear that this project is poised to make waves
+              with its creative features, community focus, and commitment to
+              rewarding those who have faced challenges in the dynamic NFT
+              landscape. Stay tuned for more updates as $NOBODY prepares to
+              redefine the future of decentralized finance and NFTs.
             </p>
           </div>
         </div>
