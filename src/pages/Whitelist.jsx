@@ -44,6 +44,13 @@ const Whitelist = () => {
       <Navbar />
       <div className=" mt-24">
         <div className=" px-4">
+
+        <div className="mx-auto flex max-w-[700px] justify-center items-center px-2">
+          <div className="flex w-full flex-col items-center mt-10">
+            <h1 className="text-[30px] sm:text-[60px] text-white">NOBODIES</h1>
+            <p className="text-4xl text-white mb-8">Admin Pannel</p>
+            </div>
+            </div>
           {/* component */}
           <div className="flex flex-col overflow-x-auto text-white font-sans">
             <div className="">

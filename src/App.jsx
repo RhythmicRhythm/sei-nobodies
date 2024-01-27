@@ -22,7 +22,7 @@ function App() {
   return (
     <UserContext.Provider value={{ userAuth, setUserAuth }}>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Whitelist />} />
         <Route path="/about" element={<About />} />
         <Route path="/tokenomics" element={<Tokenomics />} />
         <Route path="/wh" element={<Whitelist />} />
