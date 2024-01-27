@@ -14,7 +14,7 @@ const Tokenomics = () => {
             <p className="mb-2 text-xl font-semibold text-rose-700 dark:text-gray-400">
               Sei Nobodies
             </p>
-            <h2 className="pb-2 text-6xl font-bold text-gray-800 md:text-4xl dark:text-gray-300">
+            <h2 className="pb-2 text-4xl sm:6xl font-bold text-gray-800 m dark:text-gray-300">
               Tokenomics
             </h2>
             <div className="flex w-32 mt-1 mb-6 overflow-hidden rounded md:mx-auto md:mb-14">
@@ -24,16 +24,16 @@ const Tokenomics = () => {
             </div>
           </div>
           <div className="px-4 mb-10 md:text-center md:mb-20">
-            <h2 className="pb-2 text-[30px] font-bold text-rose-500 ">
+            <h2 className="pb-2 text-[20px] sm:text-[40px] font-bold text-rose-500 ">
               Token Name:{" "}
-              <span className="text-gray-300 text-4xl">Nobodies Token</span>
+              <span className="text-gray-300 text-[30px] sm:text-[55px]">Nobodies Token</span>
             </h2>
-            <h2 className="pb-2 text-[30px] font-bold text-rose-500 ">
-              Ticker: <span className="text-gray-300 text-4xl">NOBODY</span>
+            <h2 className="pb-2 text-[20px] sm:text-[40px] font-bold text-rose-500 ">
+              Ticker: <span className="text-gray-300 text-[30px] sm:text-[55px]">NOBODY</span>
             </h2>
-            <h2 className="pb-2 text-[30px] font-bold text-rose-500">
+            <h2 className="pb-2 text-[20px] sm:text-[40px] font-bold text-rose-500">
               Total Supply:{" "}
-              <span className="text-gray-300 text-4xl">100,000,000</span>
+              <span className="text-gray-300 text-[30px] sm:text-[55px]">100,000,000</span>
             </h2>
           </div>
 
@@ -42,7 +42,7 @@ const Tokenomics = () => {
               <img
                 src={index}
                 alt=""
-                className="relative z-40 object-cover w-full h-96"
+                className="relative z-40  w-full h-96"
               />
             </div>
             <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
@@ -190,7 +190,7 @@ const Tokenomics = () => {
             <p className="mb-2 text-xl font-semibold text-rose-700 dark:text-gray-400">
               Presale/ICO Details for $NOBODY Token
             </p>
-            <h2 className="pb-2 text-2xl font-bold text-gray-800 md:text-xl dark:text-gray-300">
+            <h2 className="pb-2 text-base sm: text-2xl font-bold text-gray-800 md:text-xl dark:text-gray-300">
               The $NOBODY ICO will be structured into two primary segments, each
               offering unique opportunities for potential investors.
             </h2>
@@ -201,7 +201,7 @@ const Tokenomics = () => {
               <img
                 src={indexx}
                 alt=""
-                className="relative z-40 object-cover w-full h-96"
+                className="relative z-40 w-full h-96"
               />
             </div>
             <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
@@ -221,7 +221,7 @@ const Tokenomics = () => {
                   </span>
                   The Private Sale
                 </li>
-                <p className="text-white text-base mb-8">
+                <p className="text-gray-400 text-base mb-8">
                   The private sale phase is exclusively reserved for current
                   holders of NobodiesNFT delisted tokens, as well as selected
                   partners and investors. During this phase, every delisted
@@ -245,7 +245,7 @@ const Tokenomics = () => {
                   </span>
                   The Public Sale
                 </li>
-                <p className="text-white text-base">
+                <p className="text-gray-400 text-base">
                   The public sale phase will be open to the general public,
                   encompassing both current token holders and non-holders.
                   Access to the public sale will be facilitated through a
