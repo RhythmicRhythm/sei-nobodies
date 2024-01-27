@@ -8,7 +8,7 @@ const Tokenomics = () => {
   return (
     <div>
       <Navbar />
-      <section className="flex items-center xl:h-screen px-6 mt-24">
+      <section className="flex items-center px-6 mt-24">
         <div className="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
           <div className="px-4 mb-10 md:text-center md:mb-20 mb-30">
             <p className="mb-2 text-xl font-semibold text-rose-700 dark:text-gray-400">
