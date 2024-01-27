@@ -14,11 +14,9 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   let {
-    userAuth: { displayName },
+    userAuth: { screenName },
     setUserAuth,
   } = useContext(UserContext);
-
-  console.log(displayName);
 
   const handleInputChange = (e) => {
     // const { name, value } = e.target;
@@ -33,6 +31,7 @@ const Home = () => {
         toast.success(re.user.reloadUserInfo.displayName);
         storeInSession("user", JSON.stringify(re.user.reloadUserInfo));
         setUserAuth(re.user.reloadUserInfo);
+        console.log(re.user.reloadUserInfo);
       })
       .catch((err) => {
         console.log(err);
@@ -79,7 +78,9 @@ const Home = () => {
 
       {isLoading ? (
         <div className="mx-auto flex max-w-[700px] justify-center items-center mt-[300px] px-2">
-            <h1 className="text-[60px] sm:text-[100px] text-rose-600 r_animate">LOADING...</h1>
+          <h1 className="text-[60px] sm:text-[100px] text-rose-600 r_animate">
+            LOADING...
+          </h1>
         </div>
       ) : (
         <div className="mx-auto flex max-w-[700px] justify-center items-center px-2">
@@ -91,7 +92,7 @@ const Home = () => {
               Ready to join Nobodies Token Waitlist?
             </p>
 
-            {displayName ? (
+            {screenName ? (
               <></>
             ) : (
               <button
@@ -107,7 +108,7 @@ const Home = () => {
               onSubmit={applyWaitlist}
               className="mt-8 text-white w-full px-8"
             >
-              {displayName ? (
+              {screenName ? (
                 <div className="flex flex-col text-left mb-6">
                   <label className="w-full mb-2 text-lg">
                     Twitter Username{" "}
@@ -118,7 +119,7 @@ const Home = () => {
                   <input
                     type="text"
                     name="twitter_username"
-                    value={displayName}
+                    value={screenName}
                     className="bg-transparent px-6 py-2 border border-rose-500 rounded-lg ring-orange-500 focus:ring-2"
                     required
                   />
@@ -226,7 +227,7 @@ const Home = () => {
                 />
               </div>
 
-              {displayName ? (
+              {screenName ? (
                 <button className="text-center w-full rounded-md bg-rose-600 px-7 py-3 text-xl sm:text-3xl font-bold text-white hover:bg-rose-400">
                   Apply for Waitlist
                 </button>

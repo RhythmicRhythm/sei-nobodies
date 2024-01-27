@@ -26,13 +26,16 @@ const Whitelist = () => {
 
   const dataToCSV = [
     // Define header row for CSV
-    ["#", "Twitter Username", "Discord Username", "Sei Wallet Address"],
+    ["#", "Twitter Username", "Discord Username", "Sei Wallet Address", "NFT collection ?", "Community Intrest", "First Sei Presale?"],
     // Map courses data to CSV rows
     ...courses.map((item, index) => [
       index + 1,
       item.twitter_username,
       item.discord_username,
       item.sei_address,
+      item.sei_address_2,
+      item.sei_intrest,
+      item.sei_presale
     ]),
   ];
 
@@ -43,8 +46,8 @@ const Whitelist = () => {
         <div className=" px-4">
           {/* component */}
           <div className="flex flex-col overflow-x-auto text-white font-sans">
-            <div className="bg-rose-400">
-              <CSVLink data={dataToCSV} filename="whitelist.csv">
+            <div className="">
+              <CSVLink className="rounded-md bg-rose-600 px-7 py-3 text-base font-bold text-white hover:bg-rose-400" data={dataToCSV} filename="whitelist.csv">
                 Download CSV
               </CSVLink>
             </div>
@@ -67,7 +70,13 @@ const Whitelist = () => {
                           Sei Wallet Address
                         </th>
                         <th scope="col" className="px-6 py-4">
-                          Heading
+                         NFT collection ?
+                        </th>
+                        <th scope="col" className="px-6 py-4">
+                         Community Intrest
+                        </th>
+                        <th scope="col" className="px-6 py-4">
+                         First Sei Presale?
                         </th>
                       </tr>
                     </thead>
@@ -102,6 +111,16 @@ const Whitelist = () => {
                             <td className="whitespace-nowrap px-6 py-4 font-bold text-gray-300">
                               {item.sei_address}
                             </td>
+                            <td className="whitespace-nowrap px-6 py-4 font-bold text-gray-300">
+                              {item.sei_address_2}
+                            </td>
+                            <td className="whitespace-nowrap px-6 py-4 font-bold text-gray-300">
+                              {item.sei_intrest}
+                            </td>
+                            <td className="whitespace-nowrap px-6 py-4 font-bold text-gray-300">
+                              {item.sei_presale}
+                            </td>
+                            
                           </tr>
                         ))}
                       </tbody>
