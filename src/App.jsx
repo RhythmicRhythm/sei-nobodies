@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Whitelist from "./pages/Whitelist";
 import Success from "./pages/Success";
+import Tokenomics from "./pages/Tohenomics";
 
 export const UserContext = createContext({});
 
@@ -23,6 +24,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/tokenomics" element={<Tokenomics />} />
         <Route path="/wh" element={<Whitelist />} />
         <Route path="/success" element={<Success />} />
       </Routes>

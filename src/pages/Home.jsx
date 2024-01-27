@@ -73,7 +73,7 @@ const Home = () => {
       <Toaster />
       <Navbar />
 
-      <div className="mx-auto flex max-w-[700px] justify-center items-center px-6">
+      <div className="mx-auto flex max-w-[700px] justify-center items-center px-2">
         <div className="flex w-full flex-col items-center mt-20">
           <h1 className="text-[60px] sm:text-[100px] text-white">NOBODIES</h1>
           <p className="text-4xl text-white mb-8">On Sei</p>
