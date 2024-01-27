@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import {CSVLink} from "react-csv";
 
 const Whitelist = () => {
   const [courses, setCourses] = useState([]);
@@ -12,17 +13,29 @@ const Whitelist = () => {
       axios
         .get("https://sei-nobodies-backend.onrender.com/")
         .then(({ data }) => {
-          // setLoading(false);
+          setLoading(false);
           console.log(data);
           setCourses(data);
         })
         .catch(({ response }) => {
-          console.log(response.data.message);
-          // setIsLoading(false);
+          console.log(response);
         });
     }
     getCoursesData();
   }, []);
+
+  const dataToCSV = [
+    // Define header row for CSV
+    ["#", "Twitter Username", "Discord Username", "Sei Wallet Address"],
+    // Map courses data to CSV rows
+    ...courses.map((item, index) => [
+      index + 1,
+      item.twitter_username,
+      item.discord_username,
+      item.sei_address,
+    ]),
+  ];
+
   return (
     <div>
       <Navbar />
@@ -30,6 +43,11 @@ const Whitelist = () => {
         <div className=" px-4">
           {/* component */}
           <div className="flex flex-col overflow-x-auto text-white font-sans">
+            <div className="bg-rose-400">
+              <CSVLink data={dataToCSV} filename="whitelist.csv">
+                Download CSV
+              </CSVLink>
+            </div>
             <div className="sm:-mx-6 lg:-mx-8">
               <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
                 <div className="overflow-x-auto">
@@ -54,11 +72,16 @@ const Whitelist = () => {
                       </tr>
                     </thead>
                     {loading ? (
-                      <div className="mt-16 px-16 left-10"> 
-                      <h1 className="text-[20px] sm:text-[40px] text-white">fetching...</h1> 
-                      <h1 className="text-[20px] sm:text-[40px] text-white">fetching...</h1> 
-                      <h1 className="text-[20px] sm:text-[40px] text-white">fetching...</h1> 
-                      
+                      <div className="mt-16 px-16 left-10">
+                        <h1 className="text-[20px] sm:text-[40px] text-white">
+                          fetching...
+                        </h1>
+                        <h1 className="text-[20px] sm:text-[40px] text-white">
+                          fetching...
+                        </h1>
+                        <h1 className="text-[20px] sm:text-[40px] text-white">
+                          fetching...
+                        </h1>
                       </div>
                     ) : (
                       <tbody>
