@@ -43,7 +43,7 @@ const About = () => {
                       <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
                     </svg>
                   </span>
-                  Decentralized Governance:
+                  Decentralized Governance
                 </li>
                 <p className="text-sm text-gray-400 font-sans">
                   The $NOBODY ecosystem is governed by its community. Token
@@ -88,7 +88,7 @@ const About = () => {
                 delisted NFTs.
               </p>
 
-              <p className="text-4xl font-bold text-rose-600" >Key Features</p>
+              <p className="text-4xl font-bold text-rose-600">Key Features</p>
               <ul className="mb-10 mt-8">
                 <li className="flex items-center mb-4 mt-4 text-lg text-white">
                   <span className="mr-3 text-rose-500">
@@ -103,7 +103,7 @@ const About = () => {
                       <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
                     </svg>
                   </span>
-                  NFT Holder Rewards:
+                  NFT Holder Rewards
                 </li>
                 <p className="text-base text-gray-400 font-sans">
                   One of the groundbreaking features of $NOBODY is its
@@ -150,7 +150,7 @@ const About = () => {
                       <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
                     </svg>
                   </span>
-                  Decentralized Governance:
+                  Decentralized Governance
                 </li>
                 <p className="text-sm text-gray-400 font-sans">
                   The $NOBODY ecosystem is governed by its community. Token
@@ -182,6 +182,37 @@ const About = () => {
                 </p>
               </ul>
             </div>
+          </div>
+
+          <div className="px-4 mb-10 md:text-center md:mb-20">
+            <h2 className="pb-2 text-4xl font-bold text-gray-800  dark:text-gray-300">
+              NFT Holder Rewards Explained
+            </h2>
+
+            <p className="mb-2 text-xl font-semibold text-rose-700 dark:text-gray-400">
+              Upon the launch of $NOBODY, holders of NFTs that have been
+              delisted from various platforms will be eligible for exclusive
+              rewards. These rewards may include additional $NOBODY tokens,
+              access to special features within the $NOBODY ecosystem, or
+              participation in unique events and airdrops. This pioneering
+              approach aims to provide support and value to individuals who may
+              have faced challenges due to NFT delistings, creating a bridge
+              between the traditional NFT space and the innovative $NOBODY
+              ecosystem.
+            </p>
+          </div>
+
+          <div className="px-4 mb-10 md:text-center md:mb-20">
+            <h2 className="pb-2 text-4xl font-bold text-gray-800  dark:text-gray-300">
+            Future Development
+            </h2>
+
+            <p className="mb-2 text-xl font-semibold text-rose-700 dark:text-gray-400">
+            The $NOBODY team is committed to delivering on its promises and has a comprehensive roadmap that includes further enhancements to its ecosystem, strategic partnerships, and the continuous development of features that cater to the evolving needs of the community.
+As the Seinobodies community eagerly awaits the $NOBODY token launch, it's clear that this project is poised to make waves with its creative features, community focus, and commitment to rewarding those who have faced challenges in the dynamic NFT landscape. Stay tuned for more updates as $NOBODY prepares to redefine the future of decentralized finance and NFTs.
+
+
+            </p>
           </div>
         </div>
       </section>
