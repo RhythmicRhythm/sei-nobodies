@@ -7,7 +7,6 @@ const Success = () => {
     setUserAuth,
   } = useContext(UserContext);
 
-  
   return (
     <div>
       <div className="mx-auto flex max-w-[500px] justify-center items-center px-6">
@@ -25,7 +24,6 @@ const Success = () => {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-             
             >
               <path
                 stroke-linecap="round"
@@ -37,9 +35,12 @@ const Success = () => {
           <p className="text-4xl text-white mb-8 text-center">
             You have sucessfuly applied to join Nobodies Tohen waitlist
           </p>
-          <button className="rounded-md bg-rose-600 px-7 py-3 text-xl sm:text-3xl font-bold text-white hover:bg-rose-400">
+          <a
+            href="https://twitter.com/intent/tweet?text=i am not proud, i am a nodody, i just signed up to join the next big thing happening on sei  join me @SeiNobodies"
+            className="rounded-md bg-rose-600 px-7 py-3 text-xl sm:text-3xl font-bold text-white hover:bg-rose-400"
+          >
             Share on Twitter
-          </button>
+          </a>
         </div>
       </div>
     </div>
