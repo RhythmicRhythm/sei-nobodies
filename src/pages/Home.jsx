@@ -68,7 +68,7 @@ const Home = () => {
         navigate("/success");
       })
       .catch(({ response }) => {
-        console.log(response.data.message);
+        toast.error(response.data.message);
         setIsLoading(false);
       });
   };
@@ -78,8 +78,8 @@ const Home = () => {
       <Navbar />
 
       {isLoading ? (
-        <div className="mx-auto flex max-w-[700px] justify-center items-center px-2">
-            <h1 className="text-[60px] sm:text-[100px] text-white">LOADING...</h1>
+        <div className="mx-auto flex max-w-[700px] justify-center items-center mt-[300px] px-2">
+            <h1 className="text-[60px] sm:text-[100px] text-rose-600 r_animate">LOADING...</h1>
         </div>
       ) : (
         <div className="mx-auto flex max-w-[700px] justify-center items-center px-2">

@@ -11,14 +11,14 @@ const Success = () => {
     <div>
       <div className="mx-auto flex max-w-[500px] justify-center items-center px-6">
         <div className="flex w-full flex-col items-center mt-20">
-          <h1 className="text-[40px] sm:text-[70px] text-white">
-            CONGRATULATIONS
+          <h1 className="text-[10px] sm:text-[20px] text-gray-400">
+            CONGRATULATIONS <span class="icon">&#x1F680;</span>
           </h1>
           <p className="text-4xl text-white mb-8">{displayName}</p>
 
           <div className="">
             <svg
-              className="w-[150px] text-rose-700"
+              className="w-[150px] text-rose-700 r_animate"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -32,8 +32,8 @@ const Success = () => {
               />
             </svg>
           </div>
-          <p className="text-4xl text-white mb-8 text-center">
-            You have sucessfuly applied to join Nobodies Tohen waitlist
+          <p className="text-2xl text-white mb-8 text-center">
+            You have sucessfuly applied to join Nobodies Token waitlist
           </p>
           <a
             href="https://twitter.com/intent/tweet?text=i am not proud, i am a nodody, i just signed up to join the next big thing happening on sei  join me @SeiNobodies"

@@ -5,13 +5,21 @@ import axios from "axios";
 
 const Whitelist = () => {
   const [courses, setCourses] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function getCoursesData() {
-      const data = await axios.get("https://sei-nobodies-backend.onrender.com/");
-
-      setCourses(data.data);
-      console.log(data.data);
+      axios
+        .get("https://sei-nobodies-backend.onrender.com/")
+        .then(({ data }) => {
+          // setLoading(false);
+          console.log(data);
+          setCourses(data);
+        })
+        .catch(({ response }) => {
+          console.log(response.data.message);
+          // setIsLoading(false);
+        });
     }
     getCoursesData();
   }, []);
@@ -45,22 +53,36 @@ const Whitelist = () => {
                         </th>
                       </tr>
                     </thead>
-
-                    <tbody>
-                      {courses.map((item, index) => (
-                        <tr
-                          key={item._id}
-                          className="border-b dark:border-rose-900"
-                        >
-                          <td className="whitespace-nowrap px-6 py-4 font-bold text-lg">
-                          {index + 1}
-                          </td>
-                          <td className="whitespace-nowrap px-6 py-4 font-bold text-gray-300">{item.twitter_username}</td>
-                          <td className="whitespace-nowrap px-6 py-4 font-bold text-gray-300">{item.discord_username}</td>
-                          <td className="whitespace-nowrap px-6 py-4 font-bold text-gray-300">{item.sei_address}</td>
-                        </tr>
-                      ))}
-                    </tbody>
+                    {loading ? (
+                      <div className="mt-16 px-16 left-10"> 
+                      <h1 className="text-[20px] sm:text-[40px] text-white">fetching...</h1> 
+                      <h1 className="text-[20px] sm:text-[40px] text-white">fetching...</h1> 
+                      <h1 className="text-[20px] sm:text-[40px] text-white">fetching...</h1> 
+                      
+                      </div>
+                    ) : (
+                      <tbody>
+                        {courses.map((item, index) => (
+                          <tr
+                            key={item._id}
+                            className="border-b dark:border-rose-900"
+                          >
+                            <td className="whitespace-nowrap px-6 py-4 font-bold text-lg">
+                              {index + 1}
+                            </td>
+                            <td className="whitespace-nowrap px-6 py-4 font-bold text-gray-300">
+                              {item.twitter_username}
+                            </td>
+                            <td className="whitespace-nowrap px-6 py-4 font-bold text-gray-300">
+                              {item.discord_username}
+                            </td>
+                            <td className="whitespace-nowrap px-6 py-4 font-bold text-gray-300">
+                              {item.sei_address}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    )}
                   </table>
                 </div>
               </div>
