@@ -89,15 +89,10 @@ const Whitelist = () => {
                     </thead>
                     {loading ? (
                       <div className="mt-16 px-16 left-10">
-                        <h1 className="text-[20px] sm:text-[40px] text-white">
-                          fetching...
+                        <h1 className="text-[20px] sm:text-[40px] text-white r_animate">
+                          loading...
                         </h1>
-                        <h1 className="text-[20px] sm:text-[40px] text-white">
-                          fetching...
-                        </h1>
-                        <h1 className="text-[20px] sm:text-[40px] text-white">
-                          fetching...
-                        </h1>
+                       
                       </div>
                     ) : (
                       <tbody>
