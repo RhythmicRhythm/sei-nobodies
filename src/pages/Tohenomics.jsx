@@ -8,8 +8,8 @@ const Tokenomics = () => {
   return (
     <div>
       <Navbar />
-      <section className="flex items-center px-6 mt-24">
-        <div className="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
+      <section className="flex items-center px-2 mt-24">
+        <div className="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 ">
           <div className="px-4 mb-10 md:text-center md:mb-20 mb-30">
             <p className="mb-2 text-xl font-semibold text-rose-700 dark:text-gray-400">
               Sei Nobodies
@@ -38,16 +38,16 @@ const Tokenomics = () => {
           </div>
 
           <div className="flex flex-wrap ">
-            <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
+            <div className="w-full px-2 mb-10 lg:w-1/2 lg:mb-0">
               <img
                 src={indexx}
                 alt=""
-                className="relative z-40  w-full h-96"
+                className="relative object-contain z-40  w-full h-96"
               />
             </div>
             <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
               <ul className="mb-10">
-                <li className="flex items-center mb-4  text-[25px] text-white">
+                <li className="flex items-center mb-4  text-[22px] text-white">
                   <span className="mr-3 text-rose-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ const Tokenomics = () => {
                   </span>
                   PRIVATE SALE(ALLOWLIST) - 12.56%
                 </li>
-                <li className="flex items-center mb-4  text-[25px] text-white">
+                <li className="flex items-center mb-4  text-[22px] text-white">
                   <span className="mr-3 text-rose-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@ const Tokenomics = () => {
                   </span>
                   PUBLIC SALE (WAITLIST) - 9.84%
                 </li>
-                <li className="flex items-center mb-4 text-[25px] text-white">
+                <li className="flex items-center mb-4 text-[22px] text-white">
                   <span className="mr-3 text-rose-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +92,7 @@ const Tokenomics = () => {
                   </span>
                   LIQUIDITY - 26.18%
                 </li>
-                <li className="flex items-center mb-4  text-[25px] text-white">
+                <li className="flex items-center mb-4  text-[22px] text-white">
                   <span className="mr-3 text-rose-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +107,7 @@ const Tokenomics = () => {
                   </span>
                   TEAM - 9.98%
                 </li>
-                <li className="flex items-center mb-4  text-[25px] text-white">
+                <li className="flex items-center mb-4  text-[22px] text-white">
                   <span className="mr-3 text-rose-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -128,9 +128,9 @@ const Tokenomics = () => {
           </div>
           <div className="flex flex-wrap ">
           <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
-              <ul className="mb-10">
+              <ul className="mb-10 mt-4">
             
-                <li className="flex items-center mb-4 text-[28px] text-white">
+                <li className="flex items-center mb-4 text-[22px] text-white">
                   <span className="mr-3 text-rose-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -145,7 +145,7 @@ const Tokenomics = () => {
                   </span>
                   DEVELOPMENT - 10.50%
                 </li>
-                <li className="flex items-center mb-4  text-[28px] text-white">
+                <li className="flex items-center mb-4  text-[22px] text-white">
                   <span className="mr-3 text-rose-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -160,7 +160,7 @@ const Tokenomics = () => {
                   </span>
                   COMMUNITY - 11.16%
                 </li>
-                <li className="flex items-center mb-4  text-[28px] text-white">
+                <li className="flex items-center mb-4  text-[22px] text-white">
                   <span className="mr-3 text-rose-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -175,7 +175,7 @@ const Tokenomics = () => {
                   </span>
                   AIRDROP - 5.56%
                 </li>
-                <li className="flex items-center mb-4  text-[28px] text-white">
+                <li className="flex items-center mb-4  text-[22px] text-white">
                   <span className="mr-3 text-rose-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -192,11 +192,11 @@ const Tokenomics = () => {
                 </li>
               </ul>
             </div>
-            <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
+            <div className="w-full mb-10 lg:w-1/2 lg:mb-0">
               <img
                 src={index}
                 alt=""
-                className="relative z-40  w-full h-96"
+                className="relative object-contain z-40  w-full h-96"
               />
             </div>
            

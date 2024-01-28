@@ -23,7 +23,7 @@ const About = () => {
           </div>
 
           <div className="flex flex-wrap ">
-            <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
+            <div className="w-full mb-10 lg:w-1/2 lg:mb-0">
               <img
                 src={pixel}
                 alt=""
