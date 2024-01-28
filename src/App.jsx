@@ -13,11 +13,13 @@ export const UserContext = createContext({});
 function App() {
   const [userAuth, setUserAuth] = useState({});
 
-    useEffect(() => {
-      let userInSession = lookInSession("user");
+  useEffect(() => {
+    let userInSession = lookInSession("user");
 
-      userInSession ? setUserAuth(JSON.parse(userInSession)) : setUserAuth({displayName: null})
-  }, [])
+    userInSession
+      ? setUserAuth(JSON.parse(userInSession))
+      : setUserAuth({ displayName: null });
+  }, []);
 
   return (
     <UserContext.Provider value={{ userAuth, setUserAuth }}>

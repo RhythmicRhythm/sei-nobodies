@@ -40,14 +40,14 @@ const Tokenomics = () => {
           <div className="flex flex-wrap ">
             <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
               <img
-                src={index}
+                src={indexx}
                 alt=""
                 className="relative z-40  w-full h-96"
               />
             </div>
             <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
               <ul className="mb-10">
-                <li className="flex items-center mb-4  text-lg text-white">
+                <li className="flex items-center mb-4  text-[25px] text-white">
                   <span className="mr-3 text-rose-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ const Tokenomics = () => {
                   </span>
                   PRIVATE SALE(ALLOWLIST) - 12.56%
                 </li>
-                <li className="flex items-center mb-4  text-lg text-white">
+                <li className="flex items-center mb-4  text-[25px] text-white">
                   <span className="mr-3 text-rose-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@ const Tokenomics = () => {
                   </span>
                   PUBLIC SALE (WAITLIST) - 9.84%
                 </li>
-                <li className="flex items-center mb-4 text-lg text-white">
+                <li className="flex items-center mb-4 text-[25px] text-white">
                   <span className="mr-3 text-rose-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +92,7 @@ const Tokenomics = () => {
                   </span>
                   LIQUIDITY - 26.18%
                 </li>
-                <li className="flex items-center mb-4  text-lg text-white">
+                <li className="flex items-center mb-4  text-[25px] text-white">
                   <span className="mr-3 text-rose-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +107,7 @@ const Tokenomics = () => {
                   </span>
                   TEAM - 9.98%
                 </li>
-                <li className="flex items-center mb-4  text-lg text-white">
+                <li className="flex items-center mb-4  text-[25px] text-white">
                   <span className="mr-3 text-rose-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +122,15 @@ const Tokenomics = () => {
                   </span>
                   ADVISOR - 8.10%
                 </li>
-                <li className="flex items-center mb-4 text-lg text-white">
+            
+              </ul>
+            </div>
+          </div>
+          <div className="flex flex-wrap ">
+          <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
+              <ul className="mb-10">
+            
+                <li className="flex items-center mb-4 text-[28px] text-white">
                   <span className="mr-3 text-rose-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -137,7 +145,7 @@ const Tokenomics = () => {
                   </span>
                   DEVELOPMENT - 10.50%
                 </li>
-                <li className="flex items-center mb-4  text-lg text-white">
+                <li className="flex items-center mb-4  text-[28px] text-white">
                   <span className="mr-3 text-rose-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +160,7 @@ const Tokenomics = () => {
                   </span>
                   COMMUNITY - 11.16%
                 </li>
-                <li className="flex items-center mb-4  text-lg text-white">
+                <li className="flex items-center mb-4  text-[28px] text-white">
                   <span className="mr-3 text-rose-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -167,7 +175,7 @@ const Tokenomics = () => {
                   </span>
                   AIRDROP - 5.56%
                 </li>
-                <li className="flex items-center mb-4  text-lg text-white">
+                <li className="flex items-center mb-4  text-[28px] text-white">
                   <span className="mr-3 text-rose-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -184,7 +192,17 @@ const Tokenomics = () => {
                 </li>
               </ul>
             </div>
+            <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
+              <img
+                src={index}
+                alt=""
+                className="relative z-40  w-full h-96"
+              />
+            </div>
+           
           </div>
+
+      
 
           <div className="px-4 mb-10 mt-16 md:text-center md:mb-20">
             <p className="mb-2 text-xl font-semibold text-rose-700 dark:text-gray-400">
@@ -196,14 +214,8 @@ const Tokenomics = () => {
             </h2>
           </div>
 
-          <div className="flex flex-wrap ">
-            <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
-              <img
-                src={indexx}
-                alt=""
-                className="relative z-40 w-full h-96"
-              />
-            </div>
+          <div className="flex flex-wrap justify-center">
+          
             <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
               <ul className="mb-10">
                 <li className="flex items-center mb-2 text-xl text-white">
@@ -230,6 +242,12 @@ const Tokenomics = () => {
                   (TGE). A snapshot will be taken on-chain preceding this phase
                   to accurately determine each holder's eligibility.
                 </p>
+              
+              </ul>
+            </div>
+            <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
+              <ul className="mb-10">
+             
                 <li className="flex items-center mb-2 text-xl text-white">
                   <span className="mr-3 text-rose-500">
                     <svg
